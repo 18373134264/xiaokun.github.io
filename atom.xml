@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://xiaokun188.github.io</id>
-    <title>阿良良木真宵的博客</title>
+    <title>阿良良木真宵的随笔</title>
     <subtitle>我们一日日所经历的日常，也许正是不断发生的奇迹</subtitle>
     <icon>https://xiaokun188.github.io/images/favicon.ico</icon>
     <link href="https://xiaokun188.github.io" />
@@ -120,6 +120,21 @@
         <updated>2023-12-24T16:16:18.000Z</updated>
     </entry>
     <entry>
+        <id>https://xiaokun188.github.io/2023/12/25/java%E6%8A%A5%E9%94%99%EF%BC%9AType%20handler%20was%20null%20on%20parameter%20mapping%20for%20property%20%E2%80%98_%E2%80%98,jdbcType%20(null)%20combination./</id>
+        <title>java报错：Type handler was null on parameter mapping for property ‘_‘,jdbcType (null) combination.</title>
+        <link rel="alternate" href="https://xiaokun188.github.io/2023/12/25/java%E6%8A%A5%E9%94%99%EF%BC%9AType%20handler%20was%20null%20on%20parameter%20mapping%20for%20property%20%E2%80%98_%E2%80%98,jdbcType%20(null)%20combination./"/>
+        <content type="html">&lt;h3 id=&#34;实体类字段为json类型时必须使用标签进行判定以排除其为null的可能性否则会报下面的找不到为null时的指定&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#实体类字段为json类型时必须使用标签进行判定以排除其为null的可能性否则会报下面的找不到为null时的指定&#34;&gt;#&lt;/a&gt; 实体类字段为 JSON 类型时，必须使用标签进行判定以排除其为 null 的可能性，否则会报下面的找不到为 null 时的指定。&lt;/h3&gt;
+&lt;figure class=&#34;highlight java&#34;&gt;&lt;figcaption data-lang=&#34;java&#34;&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr&gt;&lt;td data-num=&#34;1&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token class-name&#34;&gt;Cause&lt;/span&gt;&lt;span class=&#34;token operator&#34;&gt;:&lt;/span&gt; &lt;span class=&#34;token class-name&#34;&gt;&lt;span class=&#34;token namespace&#34;&gt;java&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;lang&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;&lt;/span&gt;IllegalStateException&lt;/span&gt;&lt;span class=&#34;token operator&#34;&gt;:&lt;/span&gt; &lt;span class=&#34;token class-name&#34;&gt;Type&lt;/span&gt; handler was &lt;span class=&#34;token keyword&#34;&gt;null&lt;/span&gt; on parameter mapping &lt;span class=&#34;token keyword&#34;&gt;for&lt;/span&gt; &lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;2&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;property &#39;urlParams&#39;&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt; &lt;span class=&#34;token class-name&#34;&gt;It&lt;/span&gt; was either not specified and&lt;span class=&#34;token operator&#34;&gt;/&lt;/span&gt;or could not be found &lt;span class=&#34;token keyword&#34;&gt;for&lt;/span&gt; the javaType &lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;3&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;token class-name&#34;&gt;&lt;span class=&#34;token namespace&#34;&gt;com&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;alibaba&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;fastjson&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;&lt;/span&gt;JSONObject&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt; &lt;span class=&#34;token operator&#34;&gt;:&lt;/span&gt; jdbcType &lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;token keyword&#34;&gt;null&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt; combination&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;p&gt;&lt;img data-src=&#34;https://img-blog.csdnimg.cn/a565766b9a7b4b9596e9930febf71bbe.png&#34; alt=&#34;在这里插入图片描述&#34; /&gt;&lt;/p&gt;
+&lt;h3 id=&#34;解决方法在java对应的实体类添加对应的字段重点是加上typehandler-jacksontypehandlerclass这个注解&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#解决方法在java对应的实体类添加对应的字段重点是加上typehandler-jacksontypehandlerclass这个注解&#34;&gt;#&lt;/a&gt; 解决方法：在 java 对应的实体类添加对应的字段，重点是加上 (typeHandler = JacksonTypeHandler.class) 这个注解&lt;/h3&gt;
+&lt;p&gt;&lt;img data-src=&#34;https://img-blog.csdnimg.cn/8432e2ee40c54640b402dd251479945d.png&#34; alt=&#34;在这里插入图片描述&#34; /&gt;&lt;/p&gt;
+</content>
+        <category term="笔记" scheme="https://xiaokun188.github.io/categories/%E7%AC%94%E8%AE%B0/" />
+        <category term="java" scheme="https://xiaokun188.github.io/categories/%E7%AC%94%E8%AE%B0/java/" />
+        <category term="笔记" scheme="https://xiaokun188.github.io/tagssss/%E7%AC%94%E8%AE%B0/" />
+        <category term="java" scheme="https://xiaokun188.github.io/tagssss/java/" />
+        <updated>2023-12-24T16:16:18.000Z</updated>
+    </entry>
+    <entry>
         <id>https://xiaokun188.github.io/2023/12/25/jenkins%E4%B8%8B%E8%BD%BD%E4%B8%8E%E7%AE%80%E5%8D%95%E4%BD%BF%E7%94%A8/</id>
         <title>jenkins下载与简单使用</title>
         <link rel="alternate" href="https://xiaokun188.github.io/2023/12/25/jenkins%E4%B8%8B%E8%BD%BD%E4%B8%8E%E7%AE%80%E5%8D%95%E4%BD%BF%E7%94%A8/"/>
@@ -157,21 +172,6 @@
         <category term="jenkins" scheme="https://xiaokun188.github.io/categories/%E7%AC%94%E8%AE%B0/jenkins/" />
         <category term="笔记" scheme="https://xiaokun188.github.io/tagssss/%E7%AC%94%E8%AE%B0/" />
         <category term="jenkins" scheme="https://xiaokun188.github.io/tagssss/jenkins/" />
-        <updated>2023-12-24T16:16:18.000Z</updated>
-    </entry>
-    <entry>
-        <id>https://xiaokun188.github.io/2023/12/25/java%E6%8A%A5%E9%94%99%EF%BC%9AType%20handler%20was%20null%20on%20parameter%20mapping%20for%20property%20%E2%80%98_%E2%80%98,jdbcType%20(null)%20combination./</id>
-        <title>java报错：Type handler was null on parameter mapping for property ‘_‘,jdbcType (null) combination.</title>
-        <link rel="alternate" href="https://xiaokun188.github.io/2023/12/25/java%E6%8A%A5%E9%94%99%EF%BC%9AType%20handler%20was%20null%20on%20parameter%20mapping%20for%20property%20%E2%80%98_%E2%80%98,jdbcType%20(null)%20combination./"/>
-        <content type="html">&lt;h3 id=&#34;实体类字段为json类型时必须使用标签进行判定以排除其为null的可能性否则会报下面的找不到为null时的指定&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#实体类字段为json类型时必须使用标签进行判定以排除其为null的可能性否则会报下面的找不到为null时的指定&#34;&gt;#&lt;/a&gt; 实体类字段为 JSON 类型时，必须使用标签进行判定以排除其为 null 的可能性，否则会报下面的找不到为 null 时的指定。&lt;/h3&gt;
-&lt;figure class=&#34;highlight java&#34;&gt;&lt;figcaption data-lang=&#34;java&#34;&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr&gt;&lt;td data-num=&#34;1&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token class-name&#34;&gt;Cause&lt;/span&gt;&lt;span class=&#34;token operator&#34;&gt;:&lt;/span&gt; &lt;span class=&#34;token class-name&#34;&gt;&lt;span class=&#34;token namespace&#34;&gt;java&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;lang&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;&lt;/span&gt;IllegalStateException&lt;/span&gt;&lt;span class=&#34;token operator&#34;&gt;:&lt;/span&gt; &lt;span class=&#34;token class-name&#34;&gt;Type&lt;/span&gt; handler was &lt;span class=&#34;token keyword&#34;&gt;null&lt;/span&gt; on parameter mapping &lt;span class=&#34;token keyword&#34;&gt;for&lt;/span&gt; &lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;2&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;property &#39;urlParams&#39;&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt; &lt;span class=&#34;token class-name&#34;&gt;It&lt;/span&gt; was either not specified and&lt;span class=&#34;token operator&#34;&gt;/&lt;/span&gt;or could not be found &lt;span class=&#34;token keyword&#34;&gt;for&lt;/span&gt; the javaType &lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;3&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;token class-name&#34;&gt;&lt;span class=&#34;token namespace&#34;&gt;com&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;alibaba&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;fastjson&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;&lt;/span&gt;JSONObject&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt; &lt;span class=&#34;token operator&#34;&gt;:&lt;/span&gt; jdbcType &lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;token keyword&#34;&gt;null&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt; combination&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;p&gt;&lt;img data-src=&#34;https://img-blog.csdnimg.cn/a565766b9a7b4b9596e9930febf71bbe.png&#34; alt=&#34;在这里插入图片描述&#34; /&gt;&lt;/p&gt;
-&lt;h3 id=&#34;解决方法在java对应的实体类添加对应的字段重点是加上typehandler-jacksontypehandlerclass这个注解&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#解决方法在java对应的实体类添加对应的字段重点是加上typehandler-jacksontypehandlerclass这个注解&#34;&gt;#&lt;/a&gt; 解决方法：在 java 对应的实体类添加对应的字段，重点是加上 (typeHandler = JacksonTypeHandler.class) 这个注解&lt;/h3&gt;
-&lt;p&gt;&lt;img data-src=&#34;https://img-blog.csdnimg.cn/8432e2ee40c54640b402dd251479945d.png&#34; alt=&#34;在这里插入图片描述&#34; /&gt;&lt;/p&gt;
-</content>
-        <category term="笔记" scheme="https://xiaokun188.github.io/categories/%E7%AC%94%E8%AE%B0/" />
-        <category term="java" scheme="https://xiaokun188.github.io/categories/%E7%AC%94%E8%AE%B0/java/" />
-        <category term="笔记" scheme="https://xiaokun188.github.io/tagssss/%E7%AC%94%E8%AE%B0/" />
-        <category term="java" scheme="https://xiaokun188.github.io/tagssss/java/" />
         <updated>2023-12-24T16:16:18.000Z</updated>
     </entry>
     <entry>
@@ -1443,24 +1443,6 @@ grape&lt;/p&gt;
         <updated>2020-04-13T11:12:45.000Z</updated>
     </entry>
     <entry>
-        <id>https://xiaokun188.github.io/2020/04/12/MYSQL%E6%9F%A5%E8%AF%A2%E6%8A%A5%E9%94%99Illegal%20mix%20of%20collations%20(utf8_general_ci,IMPLICIT)%20and%20(utf8_unicode_ci,IMPLICIT)/</id>
-        <title>Mysql报错：Can’t create_write to file xxx (OS error 24 - Too many open file)的快速处理方法</title>
-        <link rel="alternate" href="https://xiaokun188.github.io/2020/04/12/MYSQL%E6%9F%A5%E8%AF%A2%E6%8A%A5%E9%94%99Illegal%20mix%20of%20collations%20(utf8_general_ci,IMPLICIT)%20and%20(utf8_unicode_ci,IMPLICIT)/"/>
-        <content type="html">&lt;p&gt;在执行 SQL 语句中有比较两个表的字段时，如下图出现 Illegal mix of collations (utf8_unicode_ci,IMPLICIT) and (utf8_general_ci,IMPLICIT) 错误。&lt;br /&gt;
-&lt;img data-src=&#34;https://img-blog.csdnimg.cn/b68590c0390d4cf18567b087bce74705.png?x-oss-process=image/watermark,type_d3F5LXplbmhlaQ,shadow_50,text_Q1NETiBA5LiU6ZqP6aOO6ICM6KGM,size_20,color_FFFFFF,t_70,g_se,x_16&#34; alt=&#34;在这里插入图片描述&#34; /&gt;&lt;br /&gt;
-原因是表 &lt;code&gt;bas_parameter_item&lt;/code&gt;  编码类型是 &lt;code&gt;utf8_general_ci&lt;/code&gt; ，而表 &lt;code&gt;bas_parameter_copy1&lt;/code&gt;  编码类型是 &lt;code&gt;utf8_unicode_ci&lt;/code&gt; 。以下是我找到的解决方法：&lt;br /&gt;
-1. 查询时进行数据类型转换 &lt;code&gt;CONVERT(BPA.parameter_id USING utf8) COLLATE utf8_unicode_ci&lt;/code&gt; &lt;br /&gt;
-&lt;img data-src=&#34;https://img-blog.csdnimg.cn/233306dc775d4e598f82d42398e8126e.png?x-oss-process=image/watermark,type_d3F5LXplbmhlaQ,shadow_50,text_Q1NETiBA5LiU6ZqP6aOO6ICM6KGM,size_20,color_FFFFFF,t_70,g_se,x_16&#34; alt=&#34;在这里插入图片描述&#34; /&gt;&lt;br /&gt;
- 2. 将两个表的编码保持一致，并且查询效率大大提升&lt;/p&gt;
-&lt;figure class=&#34;highlight sql&#34;&gt;&lt;figcaption data-lang=&#34;SQL&#34;&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr&gt;&lt;td data-num=&#34;1&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token keyword&#34;&gt;alter&lt;/span&gt; &lt;span class=&#34;token keyword&#34;&gt;table&lt;/span&gt; bas_parameter_copy1 &lt;span class=&#34;token keyword&#34;&gt;convert&lt;/span&gt; &lt;span class=&#34;token keyword&#34;&gt;to&lt;/span&gt; &lt;span class=&#34;token keyword&#34;&gt;character&lt;/span&gt; &lt;span class=&#34;token keyword&#34;&gt;set&lt;/span&gt; utf8 &lt;span class=&#34;token keyword&#34;&gt;collate&lt;/span&gt; utf8_general_ci&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;p&gt;&lt;img data-src=&#34;https://img-blog.csdnimg.cn/48a1c65ac8ff461391e94502b0f4ba3b.png?x-oss-process=image/watermark,type_d3F5LXplbmhlaQ,shadow_50,text_Q1NETiBA5LiU6ZqP6aOO6ICM6KGM,size_20,color_FFFFFF,t_70,g_se,x_16&#34; alt=&#34;在这里插入图片描述&#34; /&gt;&lt;/p&gt;
-</content>
-        <category term="笔记" scheme="https://xiaokun188.github.io/categories/%E7%AC%94%E8%AE%B0/" />
-        <category term="数据库" scheme="https://xiaokun188.github.io/categories/%E7%AC%94%E8%AE%B0/%E6%95%B0%E6%8D%AE%E5%BA%93/" />
-        <category term="笔记" scheme="https://xiaokun188.github.io/tagssss/%E7%AC%94%E8%AE%B0/" />
-        <category term="数据库" scheme="https://xiaokun188.github.io/tagssss/%E6%95%B0%E6%8D%AE%E5%BA%93/" />
-        <updated>2020-04-12T12:46:25.000Z</updated>
-    </entry>
-    <entry>
         <id>https://xiaokun188.github.io/2020/04/12/LambaQueryWrapper%E7%9A%84%E7%BB%8F%E5%B8%B8%E4%BD%BF%E7%94%A8%E6%96%B9%E6%B3%95%EF%BC%88%E4%BF%AE%E6%94%B9%E3%80%81%E6%9F%A5%E8%AF%A2%E3%80%81%E5%88%A0%E9%99%A4%EF%BC%89/</id>
         <title>LambaQueryWrapper的经常使用方法（修改、查询、删除）</title>
         <link rel="alternate" href="https://xiaokun188.github.io/2020/04/12/LambaQueryWrapper%E7%9A%84%E7%BB%8F%E5%B8%B8%E4%BD%BF%E7%94%A8%E6%96%B9%E6%B3%95%EF%BC%88%E4%BF%AE%E6%94%B9%E3%80%81%E6%9F%A5%E8%AF%A2%E3%80%81%E5%88%A0%E9%99%A4%EF%BC%89/"/>
@@ -1515,6 +1497,24 @@ grape&lt;/p&gt;
 &lt;li&gt;QUARTER  季度&lt;/li&gt;
 &lt;li&gt;YEAR  年&lt;/li&gt;
 &lt;/ul&gt;
+</content>
+        <category term="笔记" scheme="https://xiaokun188.github.io/categories/%E7%AC%94%E8%AE%B0/" />
+        <category term="数据库" scheme="https://xiaokun188.github.io/categories/%E7%AC%94%E8%AE%B0/%E6%95%B0%E6%8D%AE%E5%BA%93/" />
+        <category term="笔记" scheme="https://xiaokun188.github.io/tagssss/%E7%AC%94%E8%AE%B0/" />
+        <category term="数据库" scheme="https://xiaokun188.github.io/tagssss/%E6%95%B0%E6%8D%AE%E5%BA%93/" />
+        <updated>2020-04-12T12:46:25.000Z</updated>
+    </entry>
+    <entry>
+        <id>https://xiaokun188.github.io/2020/04/12/MYSQL%E6%9F%A5%E8%AF%A2%E6%8A%A5%E9%94%99Illegal%20mix%20of%20collations%20(utf8_general_ci,IMPLICIT)%20and%20(utf8_unicode_ci,IMPLICIT)/</id>
+        <title>Mysql报错：Can’t create_write to file xxx (OS error 24 - Too many open file)的快速处理方法</title>
+        <link rel="alternate" href="https://xiaokun188.github.io/2020/04/12/MYSQL%E6%9F%A5%E8%AF%A2%E6%8A%A5%E9%94%99Illegal%20mix%20of%20collations%20(utf8_general_ci,IMPLICIT)%20and%20(utf8_unicode_ci,IMPLICIT)/"/>
+        <content type="html">&lt;p&gt;在执行 SQL 语句中有比较两个表的字段时，如下图出现 Illegal mix of collations (utf8_unicode_ci,IMPLICIT) and (utf8_general_ci,IMPLICIT) 错误。&lt;br /&gt;
+&lt;img data-src=&#34;https://img-blog.csdnimg.cn/b68590c0390d4cf18567b087bce74705.png?x-oss-process=image/watermark,type_d3F5LXplbmhlaQ,shadow_50,text_Q1NETiBA5LiU6ZqP6aOO6ICM6KGM,size_20,color_FFFFFF,t_70,g_se,x_16&#34; alt=&#34;在这里插入图片描述&#34; /&gt;&lt;br /&gt;
+原因是表 &lt;code&gt;bas_parameter_item&lt;/code&gt;  编码类型是 &lt;code&gt;utf8_general_ci&lt;/code&gt; ，而表 &lt;code&gt;bas_parameter_copy1&lt;/code&gt;  编码类型是 &lt;code&gt;utf8_unicode_ci&lt;/code&gt; 。以下是我找到的解决方法：&lt;br /&gt;
+1. 查询时进行数据类型转换 &lt;code&gt;CONVERT(BPA.parameter_id USING utf8) COLLATE utf8_unicode_ci&lt;/code&gt; &lt;br /&gt;
+&lt;img data-src=&#34;https://img-blog.csdnimg.cn/233306dc775d4e598f82d42398e8126e.png?x-oss-process=image/watermark,type_d3F5LXplbmhlaQ,shadow_50,text_Q1NETiBA5LiU6ZqP6aOO6ICM6KGM,size_20,color_FFFFFF,t_70,g_se,x_16&#34; alt=&#34;在这里插入图片描述&#34; /&gt;&lt;br /&gt;
+ 2. 将两个表的编码保持一致，并且查询效率大大提升&lt;/p&gt;
+&lt;figure class=&#34;highlight sql&#34;&gt;&lt;figcaption data-lang=&#34;SQL&#34;&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr&gt;&lt;td data-num=&#34;1&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token keyword&#34;&gt;alter&lt;/span&gt; &lt;span class=&#34;token keyword&#34;&gt;table&lt;/span&gt; bas_parameter_copy1 &lt;span class=&#34;token keyword&#34;&gt;convert&lt;/span&gt; &lt;span class=&#34;token keyword&#34;&gt;to&lt;/span&gt; &lt;span class=&#34;token keyword&#34;&gt;character&lt;/span&gt; &lt;span class=&#34;token keyword&#34;&gt;set&lt;/span&gt; utf8 &lt;span class=&#34;token keyword&#34;&gt;collate&lt;/span&gt; utf8_general_ci&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;p&gt;&lt;img data-src=&#34;https://img-blog.csdnimg.cn/48a1c65ac8ff461391e94502b0f4ba3b.png?x-oss-process=image/watermark,type_d3F5LXplbmhlaQ,shadow_50,text_Q1NETiBA5LiU6ZqP6aOO6ICM6KGM,size_20,color_FFFFFF,t_70,g_se,x_16&#34; alt=&#34;在这里插入图片描述&#34; /&gt;&lt;/p&gt;
 </content>
         <category term="笔记" scheme="https://xiaokun188.github.io/categories/%E7%AC%94%E8%AE%B0/" />
         <category term="数据库" scheme="https://xiaokun188.github.io/categories/%E7%AC%94%E8%AE%B0/%E6%95%B0%E6%8D%AE%E5%BA%93/" />
